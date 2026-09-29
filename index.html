@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>云计算实验二</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 48px 20px;
+      font-family: "Microsoft YaHei", sans-serif;
+      background: #f3f6fa;
+      color: #223047;
+      line-height: 1.8;
+    }
+
+    main {
+      max-width: 720px;
+      margin: auto;
+      padding: 32px;
+      background: white;
+      border-radius: 12px;
+    }
+
+    h1 {
+      color: #2458a6;
+    }
+
+    button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      background: #2458a6;
+      color: white;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    #message {
+      color: #2458a6;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hello World!</h1>
+    <h2>云环境下的网页发布实验</h2>
+
+    <p>这是我通过 GitHub Pages 发布的实验网页。</p>
+
+    <ul>
+      <li>实验课程：云计算与分布式系统</li>
+      <li>实验平台：GitHub Pages</li>
+      <li>页面版本：v1</li>
+    </ul>
+
+    <p>实验目标：理解网页从编写到云端发布的基本过程。</p>
+
+    <button type="button" id="test-button">测试网页交互</button>
+    <p id="message" aria-live="polite">点击按钮，查看结果。</p>
+  </main>
+
+  <script>
+    document.getElementById("test-button").addEventListener("click", function () {
+      document.getElementById("message").textContent =
+        "按钮响应成功！这段交互代码在浏览器中运行。";
+    });
+  </script>
+</body>
+</html>
